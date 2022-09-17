@@ -4,6 +4,7 @@
 
 import type { APIEmoji } from './emoji.ts';
 import type { PresenceUpdateStatus } from './gateway.ts';
+import type { OAuth2Scopes } from './oauth2.ts';
 import type { APIRole } from './permissions.ts';
 import type { APISticker } from './sticker.ts';
 import type { APIUser } from './user.ts';
@@ -117,7 +118,7 @@ export interface APIGuild extends APIPartialGuild {
 	 */
 	afk_channel_id: Snowflake | null;
 	/**
-	 * afk timeout in seconds
+	 * afk timeout in seconds, can be set to: `60`, `300`, `900`, `1800`, `3600`
 	 */
 	afk_timeout: number;
 	/**
@@ -410,6 +411,10 @@ export enum GuildFeature {
 	 */
 	Hub = 'HUB',
 	/**
+	 * Guild has disabled invite usage, preventing users from joining
+	 */
+	InvitesDisabled = 'INVITES_DISABLED',
+	/**
 	 * Guild has access to set an invite splash background
 	 */
 	InviteSplash = 'INVITE_SPLASH',
@@ -698,6 +703,10 @@ export interface APIGuildIntegration {
 	 * **This field is not provided for `discord` bot integrations.**
 	 */
 	application?: APIGuildIntegrationApplication;
+	/**
+	 * The scopes the application has been authorized for
+	 */
+	scopes?: OAuth2Scopes[];
 }
 
 export type APIGuildIntegrationType = 'twitch' | 'youtube' | 'discord';

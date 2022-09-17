@@ -1,3 +1,76 @@
+## [0.37.10](https://github.com/discordjs/discord-api-types/compare/0.37.9...0.37.10) (2022-09-15)
+
+### Features
+
+- add `RESTRateLimit` ([#585](https://github.com/discordjs/discord-api-types/issues/585)) ([f4d3f4d](https://github.com/discordjs/discord-api-types/commit/f4d3f4d5b1c1b6e42c2a8f8184f43d67b586c8c1))
+- **APIConnection:** add `two_way_link` ([#546](https://github.com/discordjs/discord-api-types/issues/546)) ([d452f63](https://github.com/discordjs/discord-api-types/commit/d452f6346bd4953a8d777f3818797c4285b1b842))
+- **APIGuild:** document afk timeout values ([#570](https://github.com/discordjs/discord-api-types/issues/570)) ([32f5a7b](https://github.com/discordjs/discord-api-types/commit/32f5a7b9814b69da7fc3772ec1f0307d39cda087))
+
+## [0.37.9](https://github.com/discordjs/discord-api-types/compare/0.37.8...0.37.9) (2022-09-12)
+
+### Features
+
+- **ConnectionService:** add new connections ([#548](https://github.com/discordjs/discord-api-types/issues/548)) ([afd3b55](https://github.com/discordjs/discord-api-types/commit/afd3b55c08b0cf75cc4f5a06d3574b6cf532cb6c))
+
+## [0.37.8](https://github.com/discordjs/discord-api-types/compare/0.37.7...0.37.8) (2022-09-08)
+
+### Features
+
+- **GuildFeature:** add `InvitesDisabled` ([#549](https://github.com/discordjs/discord-api-types/issues/549)) ([2708cb9](https://github.com/discordjs/discord-api-types/commit/2708cb9dcaa07d19ca71e9ca211e78939b9d1ff4))
+
+## [0.37.7](https://github.com/discordjs/discord-api-types/compare/0.37.6...0.37.7) (2022-09-05)
+
+### Bug Fixes
+
+- **ChannelType:** bring back old names ([b08f2e3](https://github.com/discordjs/discord-api-types/commit/b08f2e34dbe9afccca6f565db6c7b27a21453d85))
+
+## [0.37.6](https://github.com/discordjs/discord-api-types/compare/0.37.5...0.37.6) (2022-09-05)
+
+### Bug Fixes
+
+- **APIModalSubmission:** `components` is not optional ([#574](https://github.com/discordjs/discord-api-types/issues/574)) ([f69b586](https://github.com/discordjs/discord-api-types/commit/f69b586d0148afd017e6da70ab8d745b6ba04ba4))
+- **GuildChannelType:** add missing `GuildCategory` type ([#579](https://github.com/discordjs/discord-api-types/issues/579)) ([815c68f](https://github.com/discordjs/discord-api-types/commit/815c68fe46034029200a8e2903748a3d2e6af7b9))
+- **RESTPatchAPIGuildVoiceStateCurrentMemberJSONBody:** `channel_id` is optional ([#547](https://github.com/discordjs/discord-api-types/issues/547)) ([b7b855b](https://github.com/discordjs/discord-api-types/commit/b7b855b2005bb3989810850d6e00bec443a15c92))
+
+### Features
+
+- **APIGuildIntegration:** add `scopes` ([#563](https://github.com/discordjs/discord-api-types/issues/563)) ([73d15dd](https://github.com/discordjs/discord-api-types/commit/73d15ddcbbc676efac876602a3cd726bfe4c378a))
+- **ApplicationFlags:** add `ApplicationCommandBadge` ([#537](https://github.com/discordjs/discord-api-types/issues/537)) ([48f0f56](https://github.com/discordjs/discord-api-types/commit/48f0f562bab10d2a1e331474fb963af8631b788b))
+- **RESTPutAPIGuildBanJSONBody:** add `delete_message_seconds` ([#534](https://github.com/discordjs/discord-api-types/issues/534)) ([4e362d5](https://github.com/discordjs/discord-api-types/commit/4e362d52608e99d466b43cd37ec6b6bb1222b660))
+
+## [0.37.5](https://github.com/discordjs/discord-api-types/compare/0.37.4...0.37.5) (2022-08-25)
+
+### Features
+
+- **FormattingPatterns:** add `ApplicationCommand` ([#525](https://github.com/discordjs/discord-api-types/issues/525)) ([0098889](https://github.com/discordjs/discord-api-types/commit/00988894995f7ac5e8ddc34125704a230329137c))
+
+## [0.37.4](https://github.com/discordjs/discord-api-types/compare/0.37.3...0.37.4) (2022-08-22)
+
+### Features
+
+- add common JSON error types ([#568](https://github.com/discordjs/discord-api-types/issues/568)) ([956f289](https://github.com/discordjs/discord-api-types/commit/956f289e885763a620cb67a36e7e42683b5c08bf))
+- **ApplicationCommand:** export base chat input types ([#569](https://github.com/discordjs/discord-api-types/issues/569)) ([248484e](https://github.com/discordjs/discord-api-types/commit/248484e55613e2da3f1d659395e1f4c010cb51b5))
+
+## [0.37.3](https://github.com/discordjs/discord-api-types/compare/0.37.2...0.37.3) (2022-08-18)
+
+### Features
+
+- **RESTJSONErrorCodes:** add 240000 ([#565](https://github.com/discordjs/discord-api-types/issues/565)) ([5bb50ae](https://github.com/discordjs/discord-api-types/commit/5bb50ae7ea6859845c9d9996f02ac42c61413df0))
+
+## [0.37.2](https://github.com/discordjs/discord-api-types/compare/0.37.1...0.37.2) (2022-08-11)
+
+### Bug Fixes
+
+- **GatewayGuildMembersChunkDispatchData:** make chunk pagination properties mandatory ([#558](https://github.com/discordjs/discord-api-types/issues/558)) ([0e03e39](https://github.com/discordjs/discord-api-types/commit/0e03e39aa2bf8f1b9a58113a3242c4722e64922b))
+- **GatewayRequestGuildMembersData:** limit being required with user_ids ([#559](https://github.com/discordjs/discord-api-types/issues/559)) ([dc3d5df](https://github.com/discordjs/discord-api-types/commit/dc3d5df0a2931eff63991987166634661d5bd1d8))
+- **RESTGetAPIChannelUsersThreadsArchivedResult:** add `has_more` missing field ([#543](https://github.com/discordjs/discord-api-types/issues/543)) ([796f6d8](https://github.com/discordjs/discord-api-types/commit/796f6d8a3b2f55d2a120137801e0450ddf30576e))
+
+### Features
+
+- add search that might or might not work ([f8a9c8b](https://github.com/discordjs/discord-api-types/commit/f8a9c8b5c6bdd73bcbf9dd6fff66fafac2594ba4))
+- **APIVoiceChannel:** support text in voice, properties `last_message_id` and `rate_limit_per_user` ([#544](https://github.com/discordjs/discord-api-types/issues/544)) ([4488d8f](https://github.com/discordjs/discord-api-types/commit/4488d8fd2611a6547fc6149ba1cec5682340a119))
+- **GatewayReadyDispatchData:** add `resume_gateway_url` ([#552](https://github.com/discordjs/discord-api-types/issues/552)) ([9a50367](https://github.com/discordjs/discord-api-types/commit/9a50367dad3a06fbca6e8d1fdd98fbf144595d4e))
+
 ## [0.37.1](https://github.com/discordjs/discord-api-types/compare/0.37.0...0.37.1) (2022-08-04)
 
 # [0.37.0](https://github.com/discordjs/discord-api-types/compare/0.36.3...0.37.0) (2022-07-28)

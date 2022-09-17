@@ -205,6 +205,10 @@ export interface APIConnection {
 	 */
 	show_activity: boolean;
 	/**
+	 * Whether this connection supports console voice transfer
+	 */
+	two_way_link: boolean;
+	/**
 	 * Visibility of this connection
 	 *
 	 * See https://discord.com/developers/docs/resources/user#connection-object-visibility-types
@@ -214,13 +218,15 @@ export interface APIConnection {
 
 export enum ConnectionService {
 	BattleNet = 'battlenet',
+	eBay = 'ebay',
 	EpicGames = 'epicgames',
 	Facebook = 'facebook',
 	GitHub = 'github',
 	LeagueOfLegends = 'leagueoflegends',
+	PayPal = 'paypal',
 	PlayStationNetwork = 'playstation',
 	Reddit = 'reddit',
-	SamsungGalaxy = 'samsunggalaxy',
+	RiotGames = 'riotgames',
 	Spotify = 'spotify',
 	Skype = 'skype',
 	Steam = 'steam',
